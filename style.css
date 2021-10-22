@@ -1,0 +1,959 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+  margin: 0 auto;
+}
+body .work-table {
+  position: fixed;
+  padding: 10px;
+}
+body .work-table .foldier-icons {
+  width: 50px;
+  height: 50px;
+  background: url(https://img.icons8.com/color/96/000000/mac-folder.png) no-repeat center center;
+  background-size: cover;
+  margin: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+body .work-table .foldier-icons:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+body .work-table .foldier-icons p {
+  position: relative;
+  top: 25px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+body .work-table .linux {
+  width: 50px;
+  height: 50px;
+  background: url(https://img.icons8.com/dusk/64/000000/linux.png) no-repeat center center;
+  background-size: cover;
+  margin: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+body .work-table .linux:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+body .work-table .linux p {
+  position: relative;
+  top: 30px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+body .work-table .foldier-fire-icons {
+  width: 50px;
+  height: 50px;
+  background: url(https://img.icons8.com/officel/80/000000/burn-folder.png) no-repeat center center;
+  background-size: cover;
+  margin: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+body .work-table .foldier-fire-icons:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+body .work-table .foldier-fire-icons p {
+  position: relative;
+  top: 30px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(images/walpaper.png) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.window {
+  margin: 10px;
+  border-radius: 10px;
+  width: 1400px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px black;
+}
+.window .innder-window {
+  width: 100%;
+  height: calc(100% - 60px);
+  display: flex;
+}
+.window .innder-window .left-side {
+  height: 100%;
+  flex: 1;
+  display: flex;
+}
+.window .innder-window .left-side .icons-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  background-color: #4d4d4d;
+  border-bottom-left-radius: 10px;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-1 {
+  width: 25px;
+  height: 25px;
+  background: url(/images/files.png) no-repeat center center;
+  background-size: cover;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-1:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-1 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-2 {
+  width: 25px;
+  height: 25px;
+  background: url(/images/search.png) no-repeat center center;
+  background-size: cover;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-2:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-2 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-3 {
+  width: 25px;
+  height: 25px;
+  background: url(/images/source-control.png) no-repeat center center;
+  background-size: cover;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-3:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-3 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-4 {
+  width: 25px;
+  height: 25px;
+  background: url(/images/debug-alt.png) no-repeat center center;
+  background-size: cover;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-4:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-4 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-5 {
+  width: 25px;
+  height: 25px;
+  background: url(/images/extensions.png) no-repeat center center;
+  background-size: cover;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-5:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-5 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-6 {
+  width: 25px;
+  height: 25px;
+  background: url(/images/remote-explorer.png) no-repeat center center;
+  background-size: cover;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-6:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-6 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-7 {
+  width: 25px;
+  height: 25px;
+  background: url(/images/settings-gear.png) no-repeat center center;
+  background-size: cover;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-7:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .icons-bar #icon-bar-7 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .icons-bar div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.window .innder-window .left-side .icons-bar div:hover {
+  background-color: gray;
+}
+.window .innder-window .left-side .explorer {
+  background-color: #676767;
+  flex: 3;
+  display: grid;
+  grid-template-columns: 1, 1fr;
+  grid-template-rows: repeat(5, 30px);
+  grid-gap: 0.1rem;
+}
+.window .innder-window .left-side .explorer div {
+  padding: 2px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.window .innder-window .left-side .explorer div:hover {
+  background-color: #9a9a9a;
+}
+.window .innder-window .left-side .explorer div p {
+  color: white;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-1 {
+  width: 20px;
+  height: 20px;
+  background: url(https://img.icons8.com/color/48/000000/html-5--v1.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-1:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-1 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-2 {
+  width: 20px;
+  height: 20px;
+  background: url(https://img.icons8.com/fluency/48/000000/folder-invoices--v1.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-2:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-2 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-3 {
+  width: 20px;
+  height: 20px;
+  background: url(https://img.icons8.com/color-glass/48/000000/css.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-3:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-3 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-4 {
+  width: 20px;
+  height: 20px;
+  background: url(https://img.icons8.com/windows/32/000000/less-logo.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-4:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-4 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-5 {
+  width: 20px;
+  height: 20px;
+  background: url(https://img.icons8.com/color-glass/48/000000/js.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-5:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .innder-window .left-side .explorer div #explorer-icon-5 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .innder-window .right-side {
+  height: 100%;
+  width: 100%;
+  background-color: #343434;
+  flex: 5;
+  display: flex;
+  border-bottom-right-radius: 10px;
+  overflow: hidden scroll;
+}
+.window .innder-window .right-side #element::-webkit-scrollbar {
+  width: 7px;
+  background-color: #4d4d4d;
+}
+.window .innder-window .right-side .column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+.window .innder-window .right-side .column p {
+  margin: 0;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.window .innder-window .right-side .code-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 40;
+}
+.window .innder-window .right-side .code-area code {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin-left: 10px;
+}
+.window .innder-window .right-side .code-area code pre {
+  margin: 0;
+}
+.window .head-window {
+  width: 100%;
+  height: 35px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: radial-gradient(grey, #7c7c7c);
+  display: flex;
+  justify-content: flex-start;
+}
+.window .head-window .circle-box {
+  margin: 2px;
+  width: auto;
+  height: 100%;
+  align-self: end;
+  display: flex;
+}
+.window .head-window .circle-box .circle-1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin-left: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.window .head-window .circle-box .circle-1:hover {
+  background: #d90000;
+}
+.window .head-window .circle-box .circle-2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: orange;
+  margin-left: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.window .head-window .circle-box .circle-2:hover {
+  background: #d98c00;
+}
+.window .head-window .circle-box .circle-3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  margin-left: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.window .head-window .circle-box .circle-3:hover {
+  background: #005a00;
+}
+.window .second-head-window {
+  height: 40px;
+  width: 100%;
+  background: #8d8d8d;
+  display: flex;
+  align-items: center;
+}
+.window .second-head-window #second-window-icon-1 {
+  width: 25px;
+  height: 25px;
+  background: url(https://img.icons8.com/fluency/48/000000/visual-studio-2019.png) no-repeat center center;
+  background-size: cover;
+  margin: 7.5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-left: 15px;
+}
+.window .second-head-window #second-window-icon-1:hover {
+  animation-name: none;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.window .second-head-window #second-window-icon-1 p {
+  position: relative;
+  top: 0px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+.window .second-head-window .container {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  width: auto;
+  align-items: center;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.window .second-head-window .container p {
+  margin: 0 auto;
+  color: white;
+  height: 25px;
+}
+.window .second-head-window .container:hover {
+  background-color: #b3b3b3;
+}
+footer {
+  z-index: 1;
+  bottom: 0;
+  position: fixed;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+footer #icon-1 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/color/96/000000/mac-folder.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-1:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-1 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-2 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/color/96/000000/adventures--v1.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-2:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-2 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-3 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/cute-clipart/64/000000/pages.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-3:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-3 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-4 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/color/96/000000/malwarebytes.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-4:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-4 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-5 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/color/96/000000/debian.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-5:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-5 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-6 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/nolan/64/messages-mac.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-6:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-6 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-7 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-plug-hardware-flatart-icons-lineal-color-flatarticons-1.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-7:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-7 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-8 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/plasticine/100/000000/workstation.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-8:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-8 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-9 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/emoji/48/000000/headphone-emoji.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-9:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-9 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-10 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/color/96/000000/adobe-fireworks--v1.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-10:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-10 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-11 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/color/96/000000/nuke.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-11:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-11 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer #icon-12 {
+  width: 55px;
+  height: 55px;
+  background: url(https://img.icons8.com/fluency/48/000000/visual-studio-2019.png) no-repeat center center;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+footer #icon-12:hover {
+  animation-name: scale;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+footer #icon-12 p {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  align-self: center;
+}
+footer span {
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+}
+.psevdo-footer {
+  bottom: 0;
+  position: fixed;
+  width: 80%;
+  height: 100px;
+  background: radial-gradient(grey, #7c7c7c);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  opacity: 0.7;
+}
+@keyframes scale {
+  100% {
+    transform: scale(1.1);
+  }
+}

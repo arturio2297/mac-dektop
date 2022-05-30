@@ -1,6 +1,6 @@
-let files = document.querySelectorAll(".explorer div"),
+let files = document.querySelectorAll(".left-side__explorer div"),
     codeArea = document.querySelector("pre"),
-    column = document.querySelector(".column"),
+    column = document.querySelector(".right-side__column"),
     selected = files[0];
 
 let loadFile = (path) => {
@@ -10,12 +10,12 @@ let loadFile = (path) => {
    request.onload = ()=> {
       output = request.response;
       codeArea.textContent = output;
-       createRows(output);
+      createRows(output);
    };
 };
 
 let createRows = (str) => {
-   let existedRows = document.querySelectorAll(".column p");
+   let existedRows = document.querySelectorAll(".right-side__column p");
    if (existedRows != 0) {
       existedRows.forEach((el) => {
          column.removeChild(el);
@@ -34,11 +34,13 @@ let createRows = (str) => {
    }
 };
 
-loadFile("index.html");
-
-files.forEach((el) => {
- el.addEventListener("click", function() {
+files.forEach(x => {
+ x.addEventListener("click", function() {
+      if (this.id === 'images') return;
       selected = this.id;
       loadFile(this.id);
+      files.forEach(x => x.id === selected ? x.classList.add('selected') : x.classList.remove('selected'));
  });
 });
+
+selected.click();

@@ -1,6 +1,10 @@
 * {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+:root {
+  --tr-transform: transform 0.2s ease-in-out;
+  --tr-bg-color: background-color 0.2s ease-in-out;
+}
 body {
   margin: 0 auto;
 }
@@ -8,7 +12,7 @@ body .work-table {
   position: fixed;
   padding: 10px;
 }
-body .work-table .foldier-icons {
+body .work-table .work-table__folder-icon {
   width: 50px;
   height: 50px;
   background: url(https://img.icons8.com/color/96/000000/mac-folder.png) no-repeat center center;
@@ -18,23 +22,21 @@ body .work-table .foldier-icons {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
+  margin: 20px 0;
 }
-body .work-table .foldier-icons:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+body .work-table .work-table__folder-icon:hover {
+  transform: scale(1.1);
 }
-body .work-table .foldier-icons p {
+body .work-table .work-table__folder-icon p {
   position: relative;
   top: 25px;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-body .work-table .linux {
+body .work-table .work-table__linux-icon {
   width: 50px;
   height: 50px;
   background: url(https://img.icons8.com/dusk/64/000000/linux.png) no-repeat center center;
@@ -44,23 +46,21 @@ body .work-table .linux {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
+  margin: 20px 0;
 }
-body .work-table .linux:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+body .work-table .work-table__linux-icon:hover {
+  transform: scale(1.1);
 }
-body .work-table .linux p {
+body .work-table .work-table__linux-icon p {
   position: relative;
   top: 30px;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-body .work-table .foldier-fire-icons {
+body .work-table .work-table__file-folder-icon {
   width: 50px;
   height: 50px;
   background: url(https://img.icons8.com/officel/80/000000/burn-folder.png) no-repeat center center;
@@ -70,21 +70,19 @@ body .work-table .foldier-fire-icons {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
+  margin: 20px 0;
 }
-body .work-table .foldier-fire-icons:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+body .work-table .work-table__file-folder-icon:hover {
+  transform: scale(1.1);
 }
-body .work-table .foldier-fire-icons p {
+body .work-table .work-table__file-folder-icon p {
   position: relative;
   top: 30px;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 main {
   margin: 0 auto;
@@ -106,17 +104,17 @@ main {
   flex-direction: column;
   box-shadow: 1px 1px 5px black;
 }
-.window .innder-window {
+.window .widnow__inner {
   width: 100%;
   height: calc(100% - 60px);
   display: flex;
 }
-.window .innder-window .left-side {
+.window .widnow__inner .inner__left-side {
   height: 100%;
   flex: 1;
   display: flex;
 }
-.window .innder-window .left-side .icons-bar {
+.window .widnow__inner .inner__left-side .left-side__actions {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,7 +123,7 @@ main {
   background-color: #4d4d4d;
   border-bottom-left-radius: 10px;
 }
-.window .innder-window .left-side .icons-bar #icon-bar-1 {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-1 {
   width: 25px;
   height: 25px;
   background: url(/images/files.png) no-repeat center center;
@@ -135,23 +133,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-1:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-1:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-1 p {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-1 p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .icons-bar #icon-bar-2 {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-2 {
   width: 25px;
   height: 25px;
   background: url(/images/search.png) no-repeat center center;
@@ -161,23 +156,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-2:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-2:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-2 p {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-2 p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .icons-bar #icon-bar-3 {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-3 {
   width: 25px;
   height: 25px;
   background: url(/images/source-control.png) no-repeat center center;
@@ -187,23 +179,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-3:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-3:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-3 p {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-3 p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .icons-bar #icon-bar-4 {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-4 {
   width: 25px;
   height: 25px;
   background: url(/images/debug-alt.png) no-repeat center center;
@@ -213,23 +202,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-4:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-4:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-4 p {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-4 p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .icons-bar #icon-bar-5 {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-5 {
   width: 25px;
   height: 25px;
   background: url(/images/extensions.png) no-repeat center center;
@@ -239,23 +225,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-5:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-5:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-5 p {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-5 p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .icons-bar #icon-bar-6 {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-6 {
   width: 25px;
   height: 25px;
   background: url(/images/remote-explorer.png) no-repeat center center;
@@ -265,23 +248,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-6:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-6:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-6 p {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-6 p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .icons-bar #icon-bar-7 {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-7 {
   width: 25px;
   height: 25px;
   background: url(/images/settings-gear.png) no-repeat center center;
@@ -291,33 +271,32 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-7:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-7:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .icons-bar #icon-bar-7 p {
+.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-7 p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .icons-bar div {
+.window .widnow__inner .inner__left-side .left-side__actions div {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
 }
-.window .innder-window .left-side .icons-bar div:hover {
+.window .widnow__inner .inner__left-side .left-side__actions div:hover {
   background-color: gray;
 }
-.window .innder-window .left-side .explorer {
+.window .widnow__inner .inner__left-side .left-side__explorer {
   background-color: #676767;
   flex: 3;
   display: grid;
@@ -325,21 +304,23 @@ main {
   grid-template-rows: repeat(5, 30px);
   grid-gap: 0.1rem;
 }
-.window .innder-window .left-side .explorer div {
+.window .widnow__inner .inner__left-side .left-side__explorer div {
   padding: 2px;
   cursor: pointer;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
+  transition: var(--tr-bg-color);
 }
-.window .innder-window .left-side .explorer div:hover {
+.window .widnow__inner .inner__left-side .left-side__explorer div:hover,
+.window .widnow__inner .inner__left-side .left-side__explorer div.selected {
   background-color: #9a9a9a;
 }
-.window .innder-window .left-side .explorer div p {
+.window .widnow__inner .inner__left-side .left-side__explorer div p {
   color: white;
 }
-.window .innder-window .left-side .explorer div #explorer-icon-1 {
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-html {
   width: 20px;
   height: 20px;
   background: url(https://img.icons8.com/color/48/000000/html-5--v1.png) no-repeat center center;
@@ -349,23 +330,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .explorer div #explorer-icon-1:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-html:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .explorer div #explorer-icon-1 p {
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-html p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .explorer div #explorer-icon-2 {
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-images-folder {
   width: 20px;
   height: 20px;
   background: url(https://img.icons8.com/fluency/48/000000/folder-invoices--v1.png) no-repeat center center;
@@ -375,23 +353,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .explorer div #explorer-icon-2:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-images-folder:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .explorer div #explorer-icon-2 p {
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-images-folder p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .explorer div #explorer-icon-3 {
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-css {
   width: 20px;
   height: 20px;
   background: url(https://img.icons8.com/color-glass/48/000000/css.png) no-repeat center center;
@@ -401,23 +376,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .explorer div #explorer-icon-3:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-css:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .explorer div #explorer-icon-3 p {
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-css p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .explorer div #explorer-icon-4 {
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-less {
   width: 20px;
   height: 20px;
   background: url(https://img.icons8.com/windows/32/000000/less-logo.png) no-repeat center center;
@@ -427,23 +399,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .explorer div #explorer-icon-4:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-less:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .explorer div #explorer-icon-4 p {
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-less p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .left-side .explorer div #explorer-icon-5 {
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-js {
   width: 20px;
   height: 20px;
   background: url(https://img.icons8.com/color-glass/48/000000/js.png) no-repeat center center;
@@ -453,23 +422,20 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
-.window .innder-window .left-side .explorer div #explorer-icon-5:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-js:hover {
+  transform: scale(1.1);
 }
-.window .innder-window .left-side .explorer div #explorer-icon-5 p {
+.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-js p {
   position: relative;
   top: 0;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .innder-window .right-side {
+.window .widnow__inner .inner__right-side {
   height: 100%;
   width: 100%;
   background-color: #343434;
@@ -478,41 +444,49 @@ main {
   border-bottom-right-radius: 10px;
   overflow: hidden scroll;
 }
-.window .innder-window .right-side #element::-webkit-scrollbar {
-  width: 7px;
-  background-color: #4d4d4d;
+.window .widnow__inner .inner__right-side::-webkit-scrollbar {
+  width: 15px;
 }
-.window .innder-window .right-side .column {
+.window .widnow__inner .inner__right-side::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 5px;
+}
+.window .widnow__inner .inner__right-side::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 5px;
+}
+.window .widnow__inner .inner__right-side::-webkit-scrollbar-thumb:hover {
+  background-color: #1a1a1a;
+}
+.window .widnow__inner .inner__right-side .right-side__column {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
-  flex: 1;
+  width: 3%;
 }
-.window .innder-window .right-side .column p {
+.window .widnow__inner .inner__right-side .right-side__column p {
   margin: 0;
   color: white;
   margin-left: 5px;
   margin-right: 5px;
 }
-.window .innder-window .right-side .code-area {
+.window .widnow__inner .inner__right-side .right-side__code-area {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 40;
+  width: 97;
 }
-.window .innder-window .right-side .code-area code {
-  margin: 0;
+.window .widnow__inner .inner__right-side .right-side__code-area code {
+  margin: 0 10px;
   padding: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   color: white;
-  margin-left: 10px;
 }
-.window .innder-window .right-side .code-area code pre {
+.window .widnow__inner .inner__right-side .right-side__code-area code pre {
   margin: 0;
 }
-.window .head-window {
+.window .window__head {
   width: 100%;
   height: 35px;
   border-top-left-radius: 10px;
@@ -521,14 +495,14 @@ main {
   display: flex;
   justify-content: flex-start;
 }
-.window .head-window .circle-box {
+.window .window__head .head__circle-box {
   margin: 2px;
   width: auto;
   height: 100%;
   align-self: end;
   display: flex;
 }
-.window .head-window .circle-box .circle-1 {
+.window .window__head .head__circle-box .circle-box__circle--red {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -536,11 +510,12 @@ main {
   margin-left: 15px;
   margin-top: 10px;
   cursor: pointer;
+  transition: var(--tr-bg-color);
 }
-.window .head-window .circle-box .circle-1:hover {
-  background: #d90000;
+.window .window__head .head__circle-box .circle-box__circle--red:hover {
+  background-color: #cc0000;
 }
-.window .head-window .circle-box .circle-2 {
+.window .window__head .head__circle-box .circle-box__circle--orange {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -548,11 +523,12 @@ main {
   margin-left: 15px;
   margin-top: 10px;
   cursor: pointer;
+  transition: var(--tr-bg-color);
 }
-.window .head-window .circle-box .circle-2:hover {
-  background: #d98c00;
+.window .window__head .head__circle-box .circle-box__circle--orange:hover {
+  background-color: #cc8400;
 }
-.window .head-window .circle-box .circle-3 {
+.window .window__head .head__circle-box .circle-box__circle--green {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -560,18 +536,19 @@ main {
   margin-left: 15px;
   margin-top: 10px;
   cursor: pointer;
+  transition: var(--tr-bg-color);
 }
-.window .head-window .circle-box .circle-3:hover {
-  background: #005a00;
+.window .window__head .head__circle-box .circle-box__circle--green:hover {
+  background-color: #004d00;
 }
-.window .second-head-window {
+.window .window__second-head {
   height: 40px;
   width: 100%;
   background: #8d8d8d;
   display: flex;
   align-items: center;
 }
-.window .second-head-window #second-window-icon-1 {
+.window .window__second-head #second-head__icon {
   width: 25px;
   height: 25px;
   background: url(https://img.icons8.com/fluency/48/000000/visual-studio-2019.png) no-repeat center center;
@@ -581,24 +558,21 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
   margin-left: 15px;
 }
-.window .second-head-window #second-window-icon-1:hover {
-  animation-name: none;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+.window .window__second-head #second-head__icon:hover {
+  transform: scale(1.1);
 }
-.window .second-head-window #second-window-icon-1 p {
+.window .window__second-head #second-head__icon p {
   position: relative;
   top: 0px;
   text-align: center;
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
-.window .second-head-window .container {
+.window .window__second-head .second-head__action {
   padding: 0;
   height: 100%;
   display: flex;
@@ -606,13 +580,14 @@ main {
   align-items: center;
   margin-left: 12px;
   cursor: pointer;
+  transition: var(--tr-bg-color);
 }
-.window .second-head-window .container p {
-  margin: 0 auto;
+.window .window__second-head .second-head__action p {
+  padding: 0 5px;
   color: white;
   height: 25px;
 }
-.window .second-head-window .container:hover {
+.window .window__second-head .second-head__action:hover {
   background-color: #b3b3b3;
 }
 footer {
@@ -637,12 +612,10 @@ footer #icon-1 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-1:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-1 p {
   position: relative;
@@ -651,7 +624,6 @@ footer #icon-1 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-2 {
   width: 55px;
@@ -663,12 +635,10 @@ footer #icon-2 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-2:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-2 p {
   position: relative;
@@ -677,7 +647,6 @@ footer #icon-2 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-3 {
   width: 55px;
@@ -689,12 +658,10 @@ footer #icon-3 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-3:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-3 p {
   position: relative;
@@ -703,7 +670,6 @@ footer #icon-3 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-4 {
   width: 55px;
@@ -715,12 +681,10 @@ footer #icon-4 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-4:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-4 p {
   position: relative;
@@ -729,7 +693,6 @@ footer #icon-4 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-5 {
   width: 55px;
@@ -741,12 +704,10 @@ footer #icon-5 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-5:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-5 p {
   position: relative;
@@ -755,7 +716,6 @@ footer #icon-5 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-6 {
   width: 55px;
@@ -767,12 +727,10 @@ footer #icon-6 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-6:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-6 p {
   position: relative;
@@ -781,7 +739,6 @@ footer #icon-6 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-7 {
   width: 55px;
@@ -793,12 +750,10 @@ footer #icon-7 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-7:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-7 p {
   position: relative;
@@ -807,7 +762,6 @@ footer #icon-7 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-8 {
   width: 55px;
@@ -819,12 +773,10 @@ footer #icon-8 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-8:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-8 p {
   position: relative;
@@ -833,7 +785,6 @@ footer #icon-8 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-9 {
   width: 55px;
@@ -845,12 +796,10 @@ footer #icon-9 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-9:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-9 p {
   position: relative;
@@ -859,7 +808,6 @@ footer #icon-9 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-10 {
   width: 55px;
@@ -871,12 +819,10 @@ footer #icon-10 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-10:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-10 p {
   position: relative;
@@ -885,7 +831,6 @@ footer #icon-10 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-11 {
   width: 55px;
@@ -897,12 +842,10 @@ footer #icon-11 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-11:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-11 p {
   position: relative;
@@ -911,7 +854,6 @@ footer #icon-11 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer #icon-12 {
   width: 55px;
@@ -923,12 +865,10 @@ footer #icon-12 {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  transition: var(--tr-transform);
 }
 footer #icon-12:hover {
-  animation-name: scale;
-  animation-timing-function: ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  transform: scale(1.1);
 }
 footer #icon-12 p {
   position: relative;
@@ -937,12 +877,11 @@ footer #icon-12 p {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  align-self: center;
 }
 footer span {
   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
 }
-.psevdo-footer {
+.footer {
   bottom: 0;
   position: fixed;
   width: 80%;
@@ -951,9 +890,4 @@ footer span {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   opacity: 0.7;
-}
-@keyframes scale {
-  100% {
-    transform: scale(1.1);
-  }
 }

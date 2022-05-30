@@ -23,7 +23,6 @@ body .work-table .work-table__folder-icon {
   flex-direction: column;
   justify-content: end;
   transition: var(--tr-transform);
-  margin: 20px 0;
 }
 body .work-table .work-table__folder-icon:hover {
   transform: scale(1.1);
@@ -47,7 +46,6 @@ body .work-table .work-table__linux-icon {
   flex-direction: column;
   justify-content: end;
   transition: var(--tr-transform);
-  margin: 20px 0;
 }
 body .work-table .work-table__linux-icon:hover {
   transform: scale(1.1);
@@ -71,7 +69,6 @@ body .work-table .work-table__file-folder-icon {
   flex-direction: column;
   justify-content: end;
   transition: var(--tr-transform);
-  margin: 20px 0;
 }
 body .work-table .work-table__file-folder-icon:hover {
   transform: scale(1.1);
@@ -104,17 +101,17 @@ main {
   flex-direction: column;
   box-shadow: 1px 1px 5px black;
 }
-.window .widnow__inner {
+.window .window__inner {
   width: 100%;
   height: calc(100% - 60px);
   display: flex;
 }
-.window .widnow__inner .inner__left-side {
+.window .window__inner .inner__left-side {
   height: 100%;
   flex: 1;
   display: flex;
 }
-.window .widnow__inner .inner__left-side .left-side__actions {
+.window .window__inner .inner__left-side .left-side__actions {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,7 +120,7 @@ main {
   background-color: #4d4d4d;
   border-bottom-left-radius: 10px;
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-1 {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-1 {
   width: 25px;
   height: 25px;
   background: url(/images/files.png) no-repeat center center;
@@ -135,10 +132,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-1:hover {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-1:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-1 p {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-1 p {
   position: relative;
   top: 0;
   text-align: center;
@@ -146,7 +143,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-2 {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-2 {
   width: 25px;
   height: 25px;
   background: url(/images/search.png) no-repeat center center;
@@ -158,10 +155,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-2:hover {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-2:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-2 p {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-2 p {
   position: relative;
   top: 0;
   text-align: center;
@@ -169,7 +166,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-3 {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-3 {
   width: 25px;
   height: 25px;
   background: url(/images/source-control.png) no-repeat center center;
@@ -181,10 +178,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-3:hover {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-3:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-3 p {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-3 p {
   position: relative;
   top: 0;
   text-align: center;
@@ -192,7 +189,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-4 {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-4 {
   width: 25px;
   height: 25px;
   background: url(/images/debug-alt.png) no-repeat center center;
@@ -204,10 +201,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-4:hover {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-4:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-4 p {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-4 p {
   position: relative;
   top: 0;
   text-align: center;
@@ -215,7 +212,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-5 {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-5 {
   width: 25px;
   height: 25px;
   background: url(/images/extensions.png) no-repeat center center;
@@ -227,10 +224,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-5:hover {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-5:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-5 p {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-5 p {
   position: relative;
   top: 0;
   text-align: center;
@@ -238,7 +235,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-6 {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-6 {
   width: 25px;
   height: 25px;
   background: url(/images/remote-explorer.png) no-repeat center center;
@@ -250,10 +247,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-6:hover {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-6:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-6 p {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-6 p {
   position: relative;
   top: 0;
   text-align: center;
@@ -261,7 +258,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-7 {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-7 {
   width: 25px;
   height: 25px;
   background: url(/images/settings-gear.png) no-repeat center center;
@@ -273,10 +270,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-7:hover {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-7:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__actions #icon-bar-7 p {
+.window .window__inner .inner__left-side .left-side__actions #icon-bar-7 p {
   position: relative;
   top: 0;
   text-align: center;
@@ -284,7 +281,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__actions div {
+.window .window__inner .inner__left-side .left-side__actions div {
   width: 100%;
   height: auto;
   display: flex;
@@ -293,18 +290,18 @@ main {
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
 }
-.window .widnow__inner .inner__left-side .left-side__actions div:hover {
+.window .window__inner .inner__left-side .left-side__actions div:hover {
   background-color: gray;
 }
-.window .widnow__inner .inner__left-side .left-side__explorer {
+.window .window__inner .inner__left-side .left-side__explorer {
   background-color: #676767;
   flex: 3;
   display: grid;
-  grid-template-columns: 1, 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 30px);
   grid-gap: 0.1rem;
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div {
+.window .window__inner .inner__left-side .left-side__explorer div {
   padding: 2px;
   cursor: pointer;
   width: 100%;
@@ -313,14 +310,14 @@ main {
   align-items: center;
   transition: var(--tr-bg-color);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div:hover,
-.window .widnow__inner .inner__left-side .left-side__explorer div.selected {
+.window .window__inner .inner__left-side .left-side__explorer div:hover,
+.window .window__inner .inner__left-side .left-side__explorer div.selected {
   background-color: #9a9a9a;
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div p {
+.window .window__inner .inner__left-side .left-side__explorer div p {
   color: white;
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-html {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-html {
   width: 20px;
   height: 20px;
   background: url(https://img.icons8.com/color/48/000000/html-5--v1.png) no-repeat center center;
@@ -332,10 +329,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-html:hover {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-html:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-html p {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-html p {
   position: relative;
   top: 0;
   text-align: center;
@@ -343,7 +340,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-images-folder {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-images-folder {
   width: 20px;
   height: 20px;
   background: url(https://img.icons8.com/fluency/48/000000/folder-invoices--v1.png) no-repeat center center;
@@ -355,10 +352,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-images-folder:hover {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-images-folder:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-images-folder p {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-images-folder p {
   position: relative;
   top: 0;
   text-align: center;
@@ -366,7 +363,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-css {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-css {
   width: 20px;
   height: 20px;
   background: url(https://img.icons8.com/color-glass/48/000000/css.png) no-repeat center center;
@@ -378,10 +375,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-css:hover {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-css:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-css p {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-css p {
   position: relative;
   top: 0;
   text-align: center;
@@ -389,7 +386,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-less {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-less {
   width: 20px;
   height: 20px;
   background: url(https://img.icons8.com/windows/32/000000/less-logo.png) no-repeat center center;
@@ -401,10 +398,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-less:hover {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-less:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-less p {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-less p {
   position: relative;
   top: 0;
   text-align: center;
@@ -412,7 +409,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-js {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-js {
   width: 20px;
   height: 20px;
   background: url(https://img.icons8.com/color-glass/48/000000/js.png) no-repeat center center;
@@ -424,10 +421,10 @@ main {
   justify-content: end;
   transition: var(--tr-transform);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-js:hover {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-js:hover {
   transform: scale(1.1);
 }
-.window .widnow__inner .inner__left-side .left-side__explorer div #explorer-js p {
+.window .window__inner .inner__left-side .left-side__explorer div #explorer-js p {
   position: relative;
   top: 0;
   text-align: center;
@@ -435,7 +432,7 @@ main {
   cursor: pointer;
   font-size: 12px;
 }
-.window .widnow__inner .inner__right-side {
+.window .window__inner .inner__right-side {
   height: 100%;
   width: 100%;
   background-color: #343434;
@@ -444,46 +441,46 @@ main {
   border-bottom-right-radius: 10px;
   overflow: hidden scroll;
 }
-.window .widnow__inner .inner__right-side::-webkit-scrollbar {
+.window .window__inner .inner__right-side::-webkit-scrollbar {
   width: 15px;
 }
-.window .widnow__inner .inner__right-side::-webkit-scrollbar-track {
+.window .window__inner .inner__right-side::-webkit-scrollbar-track {
   background: white;
   border-radius: 5px;
 }
-.window .widnow__inner .inner__right-side::-webkit-scrollbar-thumb {
+.window .window__inner .inner__right-side::-webkit-scrollbar-thumb {
   background-color: black;
   border-radius: 5px;
 }
-.window .widnow__inner .inner__right-side::-webkit-scrollbar-thumb:hover {
+.window .window__inner .inner__right-side::-webkit-scrollbar-thumb:hover {
   background-color: #1a1a1a;
 }
-.window .widnow__inner .inner__right-side .right-side__column {
+.window .window__inner .inner__right-side .right-side__column {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 3%;
 }
-.window .widnow__inner .inner__right-side .right-side__column p {
+.window .window__inner .inner__right-side .right-side__column p {
   margin: 0;
   color: white;
   margin-left: 5px;
   margin-right: 5px;
 }
-.window .widnow__inner .inner__right-side .right-side__code-area {
+.window .window__inner .inner__right-side .right-side__code-area {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 97;
+  width: 97%;
 }
-.window .widnow__inner .inner__right-side .right-side__code-area code {
+.window .window__inner .inner__right-side .right-side__code-area code {
   margin: 0 10px;
   padding: 0;
   height: 100%;
   width: 100%;
   color: white;
 }
-.window .widnow__inner .inner__right-side .right-side__code-area code pre {
+.window .window__inner .inner__right-side .right-side__code-area code pre {
   margin: 0;
 }
 .window .window__head {
@@ -879,7 +876,7 @@ footer #icon-12 p {
   font-size: 12px;
 }
 footer span {
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
 }
 .footer {
   bottom: 0;

@@ -1,415 +1,412 @@
 * {
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root {
-   --tr-transform: transform .2s ease-in-out;
-   --tr-bg-color: background-color .2s ease-in-out;
+  --tr-transform: transform .2s ease-in-out;
+  --tr-bg-color: background-color .2s ease-in-out;
 }
 
 .circle (@color) {
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
-   background-color: @color;
-   margin-left: 15px;
-   margin-top: 10px;
-   cursor: pointer;
-   transition: var(--tr-bg-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: @color;
+  margin-left: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: var(--tr-bg-color);
 
-   &:hover {
-      background-color: darken(@color, 10%);
-   }
+  &:hover {
+    background-color: darken(@color, 10%);
+  }
 }
 
 .icon(@url-icon, @p-top, @margin, @size) {
-   width: @size;
-   height: @size;
-   background: @url-icon no-repeat center center;
-   background-size: cover;
-   margin: @margin;
-   cursor: pointer;
-   display: flex;
-   flex-direction: column;
-   justify-content: end;
-   transition: var(--tr-transform);
+  width: @size;
+  height: @size;
+  background: @url-icon no-repeat center center;
+  background-size: cover;
+  margin: @margin;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  transition: var(--tr-transform);
 
-   &:hover {
-      transform: scale(1.1);
-   }
+  &:hover {
+    transform: scale(1.1);
+  }
 
-   p {
-      position: relative;
-      top: @p-top;
-      text-align: center;
-      color: white;
-      cursor: pointer;
-      font-size: 12px;
-   }
+  p {
+    position: relative;
+    top: @p-top;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+  }
 }
 
 
 body {
-   margin: 0 auto;
+  margin: 0 auto;
 
-   .work-table {
-      position: fixed;
-      padding: 10px;
+  .work-table {
+    position: fixed;
+    padding: 10px;
 
-      .work-table__folder-icon {
-         .icon(url(https://img.icons8.com/color/96/000000/mac-folder.png), 25px, 15px, 50px);
-         margin: 20px 0;
-      }
+    .work-table__folder-icon {
+      .icon(url(https://img.icons8.com/color/96/000000/mac-folder.png), 25px, 15px, 50px);
+    }
 
-      .work-table__linux-icon {
-         .icon(url(https://img.icons8.com/dusk/64/000000/linux.png), 30px, 15px, 50px);
-         margin: 20px 0;
-      }
+    .work-table__linux-icon {
+      .icon(url(https://img.icons8.com/dusk/64/000000/linux.png), 30px, 15px, 50px);
+    }
 
-      .work-table__file-folder-icon {
-         .icon(url(https://img.icons8.com/officel/80/000000/burn-folder.png), 30px, 15px, 50px);
-         margin: 20px 0;
-      }
-   }
+    .work-table__file-folder-icon {
+      .icon(url(https://img.icons8.com/officel/80/000000/burn-folder.png), 30px, 15px, 50px);
+    }
+  }
 }
 
 
 main {
-   margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   background: url(images/walpaper.png) no-repeat center center;
-   background-size: cover;
-   width: 100%;
-   height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(images/walpaper.png) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .window {
-   margin: 10px;
-   border-radius: 10px;
-   width: 1400px;
-   height: 800px;
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   box-shadow: 1px 1px 5px black;
+  margin: 10px;
+  border-radius: 10px;
+  width: 1400px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px black;
 
-   .widnow__inner {
-      width: 100%;
-      height: calc(100% - 60px);
+  .window__inner {
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+
+    .inner__left-side {
+      height: 100%;
+      flex: 1;
       display: flex;
 
-      .inner__left-side {
-         height: 100%;
-         flex: 1;
-         display: flex;
+      .left-side__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        height: 100%;
+        background-color: darken(grey, 20%);
+        border-bottom-left-radius: 10px;
 
-         .left-side__actions {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            flex: 1;
-            height: 100%;
-            background-color: darken(grey, 20%);
-            border-bottom-left-radius: 10px;
+        #icon-bar-1 {
+          .icon(url(/images/files.png), 0, 10px, 25px);
+        }
 
-            #icon-bar-1 {
-               .icon(url(/images/files.png), 0, 10px, 25px);
-            }
+        #icon-bar-2 {
+          .icon(url(/images/search.png), 0, 10px, 25px);
+        }
 
-            #icon-bar-2 {
-               .icon(url(/images/search.png), 0, 10px, 25px);
-            }
+        #icon-bar-3 {
+          .icon(url(/images/source-control.png), 0, 10px, 25px);
+        }
 
-            #icon-bar-3 {
-               .icon(url(/images/source-control.png), 0, 10px, 25px);
-            }
+        #icon-bar-4 {
+          .icon(url(/images/debug-alt.png), 0, 10px, 25px);
+        }
 
-            #icon-bar-4 {
-               .icon(url(/images/debug-alt.png), 0, 10px, 25px);
-            }
+        #icon-bar-5 {
+          .icon(url(/images/extensions.png), 0, 10px, 25px);
+        }
 
-            #icon-bar-5 {
-               .icon(url(/images/extensions.png), 0, 10px, 25px);
-            }
+        #icon-bar-6 {
+          .icon(url(/images/remote-explorer.png), 0, 10px, 25px);
+        }
 
-            #icon-bar-6 {
-               .icon(url(/images/remote-explorer.png), 0, 10px, 25px);
-            }
+        #icon-bar-7 {
+          .icon(url(/images/settings-gear.png), 0, 10px, 25px);
+        }
 
-            #icon-bar-7 {
-               .icon(url(/images/settings-gear.png), 0, 10px, 25px);
-            }
+        div {
+          width: 100%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: background-color .2s ease-in-out;
+          cursor: pointer;
 
-            div {
-               width: 100%;
-               height: auto;
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               transition: background-color .2s ease-in-out;
-               cursor: pointer;
-
-               &:hover {
-                  background-color: gray;
-               }
-            }
-
-         }
-
-         .left-side__explorer {
-            background-color: darken(grey, 10%);
-            flex: 3;
-            display: grid;
-            grid-template-columns: 1, 1fr;
-            grid-template-rows: repeat(5, 30px);
-            grid-gap: 0.1rem;
-
-            div {
-               padding: 2px;
-               cursor: pointer;
-               width: 100%;
-               height: 100%;
-               display: flex;
-               align-items: center;
-               transition: var(--tr-bg-color);
-
-               &:hover,
-               &.selected {
-                  background-color: lighten(grey, 10%);
-               }
-
-               p {
-                  color: white;
-               }
-
-               #explorer-html {
-                  .icon(url(https://img.icons8.com/color/48/000000/html-5--v1.png), 0, 5px, 20px);
-               }
-
-               #explorer-images-folder {
-                  .icon(url(https://img.icons8.com/fluency/48/000000/folder-invoices--v1.png), 0, 5px, 20px);
-               }
-
-               #explorer-css {
-                  .icon(url(https://img.icons8.com/color-glass/48/000000/css.png), 0, 5px, 20px);
-               }
-
-               #explorer-less {
-                  .icon(url(https://img.icons8.com/windows/32/000000/less-logo.png), 0, 5px, 20px);
-               }
-
-               #explorer-js {
-                  .icon(url(https://img.icons8.com/color-glass/48/000000/js.png), 0, 5px, 20px);
-               }
-            }
-         }
-      }
-
-      .inner__right-side {
-         height: 100%;
-         width: 100%;
-         background-color: darken(grey, 30%);
-         flex: 5;
-         display: flex;
-         border-bottom-right-radius: 10px;
-         overflow: hidden scroll;
-
-         &::-webkit-scrollbar {
-            width: 15px;
-         }
- 
-         &::-webkit-scrollbar-track {
-            background: white;
-            border-radius: 5px;
-         }
- 
-         &::-webkit-scrollbar-thumb {
-            background-color: black;
-            border-radius: 5px;
-         }
-
-         &::-webkit-scrollbar-thumb:hover {
-            background-color: lighten(black, 10%);
-         }
-
-         .right-side__column {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            width: 3%;
-
-
-            p {
-               margin: 0;
-               color: white;
-               margin-left: 5px;
-               margin-right: 5px;
-            }
-
-         }
-
-         .right-side__code-area {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 97;
-
-            code {
-               margin: 0 10px;
-               padding: 0;
-               height: 100%;
-               width: 100%;
-               color: white;
-
-               pre {
-                  margin: 0;
-               }
-            }
-         }
-      }
-   }
-
-   .window__head {
-      width: 100%;
-      height: 35px;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      background: radial-gradient(grey, rgb(124, 124, 124));
-      display: flex;
-      justify-content: flex-start;
-
-      .head__circle-box {
-         margin: 2px;
-         width: auto;
-         height: 100%;
-         align-self: end;
-         display: flex;
-
-         .circle-box__circle--red {
-            .circle(red);
-         }
-
-
-         .circle-box__circle--orange {
-            .circle(orange);
-         }
-
-         .circle-box__circle--green {
-            .circle(green);
-         }
+          &:hover {
+            background-color: gray;
+          }
+        }
 
       }
-   }
 
-   .window__second-head {
-      height: 40px;
-      width: 100%;
-      background: lighten(grey, 5%);
-      display: flex;
-      align-items: center;
+      .left-side__explorer {
+        background-color: darken(grey, 10%);
+        flex: 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 30px);
+        grid-gap: 0.1rem;
 
-      #second-head__icon {
-         .icon(url(https://img.icons8.com/fluency/48/000000/visual-studio-2019.png), 0px, 7.5px, 25px);
-         margin-left: 15px;
-      }
+        div {
+          padding: 2px;
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          transition: var(--tr-bg-color);
 
-      .second-head__action {
-         padding: 0;
-         height: 100%;
-         display: flex;
-         width: auto;
-         align-items: center;
-         margin-left: 12px;
-         cursor: pointer;
-         transition: var(--tr-bg-color);
+          &:hover,
+          &.selected {
+            background-color: lighten(grey, 10%);
+          }
 
-         p {
-            padding: 0 5px;
+          p {
             color: white;
-            height: 25px;
-         }
+          }
 
-         &:hover {
-            background-color: lighten(grey, 20%);
-         }
+          #explorer-html {
+            .icon(url(https://img.icons8.com/color/48/000000/html-5--v1.png), 0, 5px, 20px);
+          }
+
+          #explorer-images-folder {
+            .icon(url(https://img.icons8.com/fluency/48/000000/folder-invoices--v1.png), 0, 5px, 20px);
+          }
+
+          #explorer-css {
+            .icon(url(https://img.icons8.com/color-glass/48/000000/css.png), 0, 5px, 20px);
+          }
+
+          #explorer-less {
+            .icon(url(https://img.icons8.com/windows/32/000000/less-logo.png), 0, 5px, 20px);
+          }
+
+          #explorer-js {
+            .icon(url(https://img.icons8.com/color-glass/48/000000/js.png), 0, 5px, 20px);
+          }
+        }
       }
-   }
+    }
+
+    .inner__right-side {
+      height: 100%;
+      width: 100%;
+      background-color: darken(grey, 30%);
+      flex: 5;
+      display: flex;
+      border-bottom-right-radius: 10px;
+      overflow: hidden scroll;
+
+      &::-webkit-scrollbar {
+        width: 15px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: white;
+        border-radius: 5px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: black;
+        border-radius: 5px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: lighten(black, 10%);
+      }
+
+      .right-side__column {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 3%;
+
+
+        p {
+          margin: 0;
+          color: white;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+
+      }
+
+      .right-side__code-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 97%;
+
+        code {
+          margin: 0 10px;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+          color: white;
+
+          pre {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .window__head {
+    width: 100%;
+    height: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: radial-gradient(grey, rgb(124, 124, 124));
+    display: flex;
+    justify-content: flex-start;
+
+    .head__circle-box {
+      margin: 2px;
+      width: auto;
+      height: 100%;
+      align-self: end;
+      display: flex;
+
+      .circle-box__circle--red {
+        .circle(red);
+      }
+
+
+      .circle-box__circle--orange {
+        .circle(orange);
+      }
+
+      .circle-box__circle--green {
+        .circle(green);
+      }
+
+    }
+  }
+
+  .window__second-head {
+    height: 40px;
+    width: 100%;
+    background: lighten(grey, 5%);
+    display: flex;
+    align-items: center;
+
+    #second-head__icon {
+      .icon(url(https://img.icons8.com/fluency/48/000000/visual-studio-2019.png), 0px, 7.5px, 25px);
+      margin-left: 15px;
+    }
+
+    .second-head__action {
+      padding: 0;
+      height: 100%;
+      display: flex;
+      width: auto;
+      align-items: center;
+      margin-left: 12px;
+      cursor: pointer;
+      transition: var(--tr-bg-color);
+
+      p {
+        padding: 0 5px;
+        color: white;
+        height: 25px;
+      }
+
+      &:hover {
+        background-color: lighten(grey, 20%);
+      }
+    }
+  }
 }
 
 footer {
-   z-index: 1;
-   bottom: 0;
-   position: fixed;
-   width: 80%;
-   height: 100px;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   border-top-right-radius: 10px;
-   border-top-left-radius: 10px;
+  z-index: 1;
+  bottom: 0;
+  position: fixed;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 
-   #icon-1 {
-      .icon(url(https://img.icons8.com/color/96/000000/mac-folder.png), 0, 5px, 55px);
-   }
+  #icon-1 {
+    .icon(url(https://img.icons8.com/color/96/000000/mac-folder.png), 0, 5px, 55px);
+  }
 
-   #icon-2 {
-      .icon(url(https://img.icons8.com/color/96/000000/adventures--v1.png), 0, 5px, 55px);
-   }
+  #icon-2 {
+    .icon(url(https://img.icons8.com/color/96/000000/adventures--v1.png), 0, 5px, 55px);
+  }
 
-   #icon-3 {
-      .icon(url(https://img.icons8.com/cute-clipart/64/000000/pages.png), 0, 5px, 55px);
-   }
+  #icon-3 {
+    .icon(url(https://img.icons8.com/cute-clipart/64/000000/pages.png), 0, 5px, 55px);
+  }
 
-   #icon-4 {
-      .icon(url(https://img.icons8.com/color/96/000000/malwarebytes.png), 0, 5px, 55px);
-   }
+  #icon-4 {
+    .icon(url(https://img.icons8.com/color/96/000000/malwarebytes.png), 0, 5px, 55px);
+  }
 
-   #icon-5 {
-      .icon(url(https://img.icons8.com/color/96/000000/debian.png), 0, 5px, 55px);
-   }
+  #icon-5 {
+    .icon(url(https://img.icons8.com/color/96/000000/debian.png), 0, 5px, 55px);
+  }
 
-   #icon-6 {
-      .icon(url(https://img.icons8.com/nolan/64/messages-mac.png), 0, 5px, 55px);
-   }
+  #icon-6 {
+    .icon(url(https://img.icons8.com/nolan/64/messages-mac.png), 0, 5px, 55px);
+  }
 
-   #icon-7 {
-      .icon(url(https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-plug-hardware-flatart-icons-lineal-color-flatarticons-1.png), 0, 5px, 55px);
-   }
+  #icon-7 {
+    .icon(url(https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/000000/external-plug-hardware-flatart-icons-lineal-color-flatarticons-1.png), 0, 5px, 55px);
+  }
 
-   #icon-8 {
-      .icon(url(https://img.icons8.com/plasticine/100/000000/workstation.png), 0, 5px, 55px);
-   }
+  #icon-8 {
+    .icon(url(https://img.icons8.com/plasticine/100/000000/workstation.png), 0, 5px, 55px);
+  }
 
-   #icon-9 {
-      .icon(url(https://img.icons8.com/emoji/48/000000/headphone-emoji.png), 0, 5px, 55px);
-   }
+  #icon-9 {
+    .icon(url(https://img.icons8.com/emoji/48/000000/headphone-emoji.png), 0, 5px, 55px);
+  }
 
-   #icon-10 {
-      .icon(url(https://img.icons8.com/color/96/000000/adobe-fireworks--v1.png), 0, 5px, 55px);
-   }
+  #icon-10 {
+    .icon(url(https://img.icons8.com/color/96/000000/adobe-fireworks--v1.png), 0, 5px, 55px);
+  }
 
-   #icon-11 {
-      .icon(url(https://img.icons8.com/color/96/000000/nuke.png), 0, 5px, 55px);
-   }
+  #icon-11 {
+    .icon(url(https://img.icons8.com/color/96/000000/nuke.png), 0, 5px, 55px);
+  }
 
-   #icon-12 {
-      .icon(url(https://img.icons8.com/fluency/48/000000/visual-studio-2019.png), 0, 5px, 55px);
-   }
+  #icon-12 {
+    .icon(url(https://img.icons8.com/fluency/48/000000/visual-studio-2019.png), 0, 5px, 55px);
+  }
 
-   span {
-      -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
-   }
+  span {
+    -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+  }
 }
 
 .footer {
-   bottom: 0;
-   position: fixed;
-   width: 80%;
-   height: 100px;
-   background: radial-gradient(grey, rgb(124, 124, 124));
-   border-top-right-radius: 10px;
-   border-top-left-radius: 10px;
-   opacity: 0.7;
+  bottom: 0;
+  position: fixed;
+  width: 80%;
+  height: 100px;
+  background: radial-gradient(grey, rgb(124, 124, 124));
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  opacity: 0.7;
 }
